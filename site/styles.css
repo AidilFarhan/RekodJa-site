@@ -6,14 +6,14 @@ nav { min-height:92px; display:flex; align-items:center; justify-content:space-b
 a { color:inherit; text-underline-offset:3px; }
 .brand { display:inline-flex; align-items:center; font-weight:800; text-decoration:none; letter-spacing:-.04em; font-size:1.15rem; }.brand-mark { display:inline-block; width:23px; height:26px; margin-right:8px; text-align:center; color:white; background:#252d37; border-radius:5px; font:700 29px/26px Georgia, serif; }.brand-accent { color:var(--accent); }.brand-name { font-weight:400; }.google-sheet { color:rgb(15,157,88); }
 /* Wordmark: RekodJa — reusable in header and footer */
-.wordmark{font-family:"Times New Roman",Times,serif;font-weight:700;font-style:normal;color:#000;white-space:nowrap;letter-spacing:normal}
+.wordmark{display:inline;font-family:"Times New Roman",Times,serif;font-weight:700;font-style:normal;color:#000;white-space:nowrap;letter-spacing:normal}
 .wordmark-ja{font-weight:400;font-style:italic;color:#0061e9;letter-spacing:normal}
 .hero { padding:88px 0 82px; max-width:800px; }.eyebrow,.number { color:var(--accent); font-weight:800; letter-spacing:.11em; text-transform:uppercase; font-size:.73rem; }
 h1,h2 { line-height:1.08; letter-spacing:-.055em; margin:0; } h1 { font-size:clamp(3rem,8vw,6.25rem); } h2 { font-size:clamp(1.9rem,4vw,3.2rem); }
 .lede { font-size:1.18rem; color:var(--muted); max-width:610px; margin:30px 0; }.button { display:inline-block; color:white; background:var(--accent); text-decoration:none; padding:13px 19px; border-radius:6px; font-weight:700; }
 .grid { display:grid; grid-template-columns:repeat(3,1fr); background:white; border:1px solid var(--line); border-radius:6px; overflow:hidden; }.grid article { padding:32px; }.grid article+article { border-left:1px solid var(--line); }.grid h2 { font-size:1.35rem; letter-spacing:-.03em; }.grid p:not(.number),.data>p { color:var(--muted); }
 .data { display:grid; grid-template-columns:1fr 1fr; gap:72px; margin:88px 0; align-items:center; }.data h2 { font-size:2.4rem; }.data>p { margin:0; }
-footer { min-height:100px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; color:var(--muted); font-size:.9rem; } footer span:last-child { display:flex; gap:20px; }
+footer { min-height:100px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; color:var(--muted); font-size:.9rem; } footer > span:last-child { display:flex; gap:20px; }
 .legal { max-width:780px; padding-top:52px; padding-bottom:72px; }.legal h1 { font-size:clamp(2.7rem,6vw,4.6rem); }.legal h2 { font-size:1.38rem; letter-spacing:-.03em; margin-top:42px; }.legal p,.legal li { color:var(--muted); }.legal .updated { margin-top:10px; color:var(--muted); }
 .tutorial { scroll-margin-top:28px; }
 .tutorial-heading { max-width:740px; margin-bottom:32px; }
