@@ -6,8 +6,8 @@ nav { min-height:92px; display:flex; align-items:center; justify-content:space-b
 a { color:inherit; text-underline-offset:3px; }
 .brand { display:inline-flex; align-items:center; font-weight:800; text-decoration:none; letter-spacing:-.04em; font-size:1.15rem; }.brand-mark { display:inline-block; width:23px; height:26px; margin-right:8px; text-align:center; color:white; background:#252d37; border-radius:5px; font:700 29px/26px Georgia, serif; }.brand-accent { color:var(--accent); }.brand-name { font-weight:400; }.google-sheet { color:rgb(15,157,88); }
 /* Wordmark: RekodJa — reusable in header and footer */
-.wordmark{font-family:"Times New Roman",Times,serif;font-weight:700;font-style:normal;color:#000}
-.wordmark-ja{font-weight:400;font-style:italic;color:#0061e9}
+.wordmark{font-family:"Times New Roman",Times,serif;font-weight:700;font-style:normal;color:#000;white-space:nowrap;letter-spacing:normal}
+.wordmark-ja{font-weight:400;font-style:italic;color:#0061e9;letter-spacing:normal}
 .hero { padding:88px 0 82px; max-width:800px; }.eyebrow,.number { color:var(--accent); font-weight:800; letter-spacing:.11em; text-transform:uppercase; font-size:.73rem; }
 h1,h2 { line-height:1.08; letter-spacing:-.055em; margin:0; } h1 { font-size:clamp(3rem,8vw,6.25rem); } h2 { font-size:clamp(1.9rem,4vw,3.2rem); }
 .lede { font-size:1.18rem; color:var(--muted); max-width:610px; margin:30px 0; }.button { display:inline-block; color:white; background:var(--accent); text-decoration:none; padding:13px 19px; border-radius:6px; font-weight:700; }
