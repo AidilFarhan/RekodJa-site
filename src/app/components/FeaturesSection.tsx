@@ -2,6 +2,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Chrome, Sheet, Briefcase, MousePointerClick, CheckCircle2, PlayCircle, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import step1Image from "../../imports/how-step-1.png";
+import step4Image from "../../imports/how-step-4.png";
+import step5Image from "../../imports/how-step-5.png";
 
 const steps = [
   {
@@ -14,7 +17,8 @@ const steps = [
     example:
       "After installing, click the puzzle-piece icon (🧩) in the top-right corner of Chrome. Find RekodJa in the list and click the pin icon to keep it permanently visible in your toolbar — this makes it one click away on any job page.",
     image:
-      "https://images.unsplash.com/photo-1762329394706-9e0e3b6c067c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=900",
+      step1Image,
+    screenshot: true,
     videoUrl: "https://www.youtube.com/results?search_query=how+to+install+chrome+extension+pin+toolbar",
     videoLabel: "Watch: Installing & pinning a Chrome extension",
   },
@@ -56,7 +60,8 @@ const steps = [
     example:
       "The popup shows three fields: Job Title (auto-filled), Company (auto-filled), and Date Applied (defaults to today — change it if you applied earlier). Double-check the link points to the correct job before saving.",
     image:
-      "https://images.unsplash.com/flagged/photo-1562599838-8cc871c241a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=900",
+      step4Image,
+    screenshot: true,
     videoUrl: "https://www.youtube.com/results?search_query=track+job+applications+spreadsheet",
     videoLabel: "Watch: Tracking job applications efficiently",
   },
@@ -70,7 +75,8 @@ const steps = [
     example:
       "Each saved row includes: Job Title, Company, Job URL, and Date Applied. You can add your own columns like Status, Notes, or Follow-up Date directly in the sheet — RekodJa only writes to the columns it knows about.",
     image:
-      "https://images.unsplash.com/photo-1707396174190-4dcb89a7dd8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=900",
+      step5Image,
+    screenshot: true,
     videoUrl: "https://www.youtube.com/results?search_query=organize+job+search+google+sheets+template",
     videoLabel: "Watch: Organising your job search with Google Sheets",
   },
@@ -161,9 +167,9 @@ export function FeaturesSection() {
                   <img
                     src={active.image}
                     alt={active.title}
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full ${active.screenshot ? "object-contain" : "object-cover"}`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card/60 to-transparent" />
+                  {!active.screenshot && <div className="absolute inset-0 bg-gradient-to-t from-card/60 to-transparent" />}
                   <div className="absolute bottom-4 left-4 flex items-center space-x-2">
                     <span className="text-xs font-mono bg-background/80 backdrop-blur px-2 py-1 rounded-full text-muted-foreground">
                       Step {active.number}
