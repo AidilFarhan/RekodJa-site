@@ -27,7 +27,7 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://chromewebstore.google.com"
+                    href="https://chromewebstore.google.com/detail/job-tracker-quick-add/plkhmignapibfhoppbkebpndckjbjpmg?authuser=0&hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-foreground transition-colors"

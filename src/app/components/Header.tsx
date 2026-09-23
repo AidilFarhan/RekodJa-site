@@ -24,7 +24,7 @@ export function Header() {
         </div>
         <div className="flex items-center space-x-4">
           <Button asChild>
-            <a href="https://chromewebstore.google.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://chromewebstore.google.com/detail/job-tracker-quick-add/plkhmignapibfhoppbkebpndckjbjpmg?authuser=0&hl=en" target="_blank" rel="noopener noreferrer">
               Add to Chrome
             </a>
           </Button>

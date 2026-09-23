@@ -56,7 +56,7 @@ export function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <Button size="lg" className="w-full sm:w-auto" asChild>
-            <a href="https://chromewebstore.google.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://chromewebstore.google.com/detail/job-tracker-quick-add/plkhmignapibfhoppbkebpndckjbjpmg?authuser=0&hl=en" target="_blank" rel="noopener noreferrer">
               <Chrome className="mr-2 h-4 w-4" />
               Add to Chrome — It's Free
               <ArrowRight className="ml-2 h-4 w-4" />
