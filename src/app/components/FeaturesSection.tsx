@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Chrome, Sheet, Briefcase, MousePointerClick, CheckCircle2, PlayCircle, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import { BrandText } from "./BrandText";
 import step1Image from "../../imports/how-step-1.png";
 import step4Image from "../../imports/how-step-4.png";
 import step5Image from "../../imports/how-step-5.png";
@@ -62,8 +63,6 @@ const steps = [
     image:
       step4Image,
     screenshot: true,
-    videoUrl: "https://www.youtube.com/results?search_query=track+job+applications+spreadsheet",
-    videoLabel: "Watch: Tracking job applications efficiently",
   },
   {
     number: "05",
@@ -77,8 +76,6 @@ const steps = [
     image:
       step5Image,
     screenshot: true,
-    videoUrl: "https://www.youtube.com/results?search_query=organize+job+search+google+sheets+template",
-    videoLabel: "Watch: Organising your job search with Google Sheets",
   },
 ];
 
@@ -134,7 +131,7 @@ export function FeaturesSection() {
                       <div className="text-xs text-muted-foreground font-mono mb-0.5">
                         Step {step.number}
                       </div>
-                      <div className="font-medium text-sm leading-snug">{step.title}</div>
+                      <div className="font-medium text-sm leading-snug"><BrandText text={step.title} /></div>
                     </div>
                     {isActive && (
                       <motion.div
@@ -179,10 +176,10 @@ export function FeaturesSection() {
 
                 {/* Content */}
                 <div className="p-6 space-y-4">
-                  <h3 className="text-xl font-semibold">{active.title}</h3>
+                  <h3 className="text-xl font-semibold"><BrandText text={active.title} /></h3>
 
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    {active.fullDesc}
+                    <BrandText text={active.fullDesc} />
                   </p>
 
                   {/* Example box */}
@@ -190,11 +187,11 @@ export function FeaturesSection() {
                     <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
                       Example
                     </p>
-                    <p className="text-sm text-foreground/80 leading-relaxed">{active.example}</p>
+                    <p className="text-sm text-foreground/80 leading-relaxed break-words"><BrandText text={active.example} boldSheetId={active.number === "02"} /></p>
                   </div>
 
                   {/* Video link */}
-                  <Button variant="outline" size="sm" asChild className="w-full sm:w-auto">
+                  {active.videoUrl && active.videoLabel && <Button variant="outline" size="sm" asChild className="w-full sm:w-auto">
                     <a
                       href={active.videoUrl}
                       target="_blank"
@@ -202,9 +199,9 @@ export function FeaturesSection() {
                       className="flex items-center gap-2"
                     >
                       <PlayCircle className="h-4 w-4 text-red-500" />
-                      {active.videoLabel}
+                      <BrandText text={active.videoLabel} />
                     </a>
-                  </Button>
+                  </Button>}
                 </div>
               </motion.div>
             </AnimatePresence>

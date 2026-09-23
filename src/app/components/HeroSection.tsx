@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { RekodJa, GoogleSheet } from "./BrandText";
 import { Badge } from "./ui/badge";
 import { ArrowRight, Chrome } from "lucide-react";
 import { useEffect, useRef } from "react";
@@ -45,13 +46,13 @@ export function HeroSection() {
         <h1 className="mx-auto max-w-4xl text-4xl md:text-6xl lg:text-7xl tracking-tight mb-6">
           Save job postings to{" "}
           <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            your Google Sheet
+            your <GoogleSheet />
           </span>{" "}
           instantly
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-muted-foreground mb-8">
-          RekodJa is a Chrome extension that captures job listings from LinkedIn, JobStreet,
-          and Indeed directly into your own Google Sheet — no servers, no middlemen, your data stays yours.
+          <RekodJa /> is a Chrome extension that captures job listings from LinkedIn, JobStreet,
+          and Indeed directly into your own <GoogleSheet /> — no servers, no middlemen, your data stays yours.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <Button size="lg" className="w-full sm:w-auto" asChild>
@@ -151,7 +152,7 @@ export function HeroSection() {
 
             {/* Chrome Extension Popup */}
             <div className="floating-card absolute bottom-28 left-36 w-36 h-24 bg-card border rounded-2xl shadow-lg p-4 transform-gpu">
-              <div className="text-xs text-muted-foreground mb-2">RekodJa</div>
+              <div className="text-xs text-muted-foreground mb-2"><RekodJa /></div>
               <div className="h-2 bg-muted rounded w-full mb-1"></div>
               <div className="h-2 bg-muted rounded w-5/6 mb-3"></div>
               <div className="h-5 bg-primary rounded w-full"></div>

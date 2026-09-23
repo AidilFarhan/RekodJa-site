@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { RekodJa, BrandText } from "./BrandText";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { ShieldCheck, Server, Lock, BarChart3, Mail, Bell } from "lucide-react";
 
@@ -51,7 +52,7 @@ export function PricingSection() {
             Your data never leaves your hands
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
-            Privacy is not a feature — it is the architecture. RekodJa was designed so that
+            Privacy is not a feature — it is the architecture. <RekodJa /> was designed so that
             no one, including us, can ever see your job search data.
           </p>
         </div>
@@ -65,7 +66,7 @@ export function PricingSection() {
                 <CardTitle className="text-lg">{point.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">{point.description}</p>
+                <p className="text-sm text-muted-foreground"><BrandText text={point.description} /></p>
               </CardContent>
             </Card>
           ))}

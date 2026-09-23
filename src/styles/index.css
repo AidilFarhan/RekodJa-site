@@ -3,3 +3,8 @@
 @import 'tw-animate-css';
 @import './default_theme.css';
 @import './globals.css';
+
+.rekodja-wordmark { font-family: "Times New Roman", Times, serif; white-space: nowrap; letter-spacing: normal; }
+.rekodja-wordmark b { color: #000; font-weight: 700; font-style: normal; }
+.rekodja-wordmark i { color: #16213d; font-weight: 400; font-style: italic; }
+.google-sheet-green { color: #0f9d58; -webkit-text-fill-color: #0f9d58; }

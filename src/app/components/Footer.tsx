@@ -1,4 +1,5 @@
 import { Separator } from "./ui/separator";
+import { BrandLogo, RekodJa, GoogleSheet } from "./BrandText";
 
 export function Footer() {
   return (
@@ -7,13 +8,10 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-8">
           <div className="max-w-sm">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground text-xs font-bold">R</span>
-              </div>
-              <span className="font-semibold">RekodJa</span>
+              <BrandLogo />
             </div>
             <p className="text-muted-foreground text-sm">
-              A Chrome extension that saves job postings directly to your Google Sheet.
+              A Chrome extension that saves job postings directly to your <GoogleSheet />.
               Your data, your sheet, your rules.
             </p>
           </div>
@@ -71,7 +69,7 @@ export function Footer() {
         <Separator className="my-6" />
 
         <p className="text-sm text-muted-foreground">
-          © 2026 RekodJa. All rights reserved.
+          © 2026 <RekodJa />. All rights reserved.
         </p>
       </div>
     </footer>
