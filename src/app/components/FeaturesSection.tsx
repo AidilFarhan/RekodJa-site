@@ -183,12 +183,12 @@ export function FeaturesSection() {
                   </p>
 
                   {/* Example box */}
-                  <div className="rounded-xl bg-muted/60 border border-border p-4">
+                  {active.number !== "04" && active.number !== "05" && <div className="rounded-xl bg-muted/60 border border-border p-4">
                     <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
                       Example
                     </p>
                     <p className="text-sm text-foreground/80 leading-relaxed break-words"><BrandText text={active.example} boldSheetId={active.number === "02"} /></p>
-                  </div>
+                  </div>}
 
                   {/* Video link */}
                   {active.videoUrl && active.videoLabel && <Button variant="outline" size="sm" asChild className="w-full sm:w-auto">
