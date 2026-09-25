@@ -25,7 +25,7 @@ export const translations = {
       subhead: "RekodJa membantu anda menangkap tajuk jawatan, nama syarikat, tarikh dan URL kerja dari LinkedIn, JobStreet dan Indeed ke spreadsheet anda dengan hanya satu klik.",
       badgeClientSide: "100% Client-Side",
       badgeZeroServer: "Tiada Server Pembangun",
-      badgeFree: "Percuma Tanpa Langganan",
+      badgeFree: "Extension Percuma Selamanya",
       ctaInstall: "Pasang di Chrome (Percuma)",
       ctaDemo: "Cuba Simulator Interaktif",
       platformsLabel: "Disokong Pada Laman Carian Kerja Utama",
@@ -153,7 +153,7 @@ export const translations = {
           feature: "Kos Penggunaan",
           manual: "Percuma (tapi rugi masa)",
           saas: "RM60 - RM120 sebulan (berbayar)",
-          rekodja: "100% Percuma Selamanya",
+          rekodja: "Extension percuma selamanya, Web App ada pelan Percuma & Pro",
         },
         {
           feature: "Pemilikan Data Permohonan",
@@ -214,8 +214,8 @@ export const translations = {
       subhead: "Jawapan jelas untuk persoalan yang sering ditanya oleh pencari kerja.",
       items: [
         {
-          q: "Adakah RekodJa benar-benar percuma?",
-          a: "Ya, 100% percuma untuk digunakan. Tiada tempoh percubaan rahsia dan tiada had jumlah permohonan yang boleh anda simpan.",
+          q: "Berapa kos penggunaan RekodJa (Extension & Web App)?",
+          a: "Sambungan Chrome RekodJa adalah 100% percuma selamanya tanpa had permohonan. Bagi RekodJa Web App (app.rekodja.com), ia menyediakan pelan Percuma untuk pengurusan carian kerja asas, serta pilihan pelan Pro untuk ciri automasi lanjut seperti pengesanan Gmail dan analitik mendalam.",
         },
         {
           q: "Adakah developer atau sesiapa boleh melihat senarai kerja yang saya simpan?",
@@ -278,7 +278,7 @@ export const translations = {
       subhead: "RekodJa lets you capture job title, company name, date applied, and listing URL from LinkedIn, JobStreet, and Indeed into your own Google Sheet with a single click.",
       badgeClientSide: "100% Client-Side",
       badgeZeroServer: "Zero Developer Servers",
-      badgeFree: "Free Without Subscription",
+      badgeFree: "Extension Free Forever",
       ctaInstall: "Add to Chrome (Free)",
       ctaDemo: "Try Interactive Simulator",
       platformsLabel: "Supported on Top Job Search Platforms",
@@ -406,7 +406,7 @@ export const translations = {
           feature: "Subscription Cost",
           manual: "Free (but costs hours of time)",
           saas: "$15 to $30 / month (recurring)",
-          rekodja: "100% Free Forever",
+          rekodja: "Extension is free forever, Web App has Free and Pro tiers",
         },
         {
           feature: "Data Ownership",
@@ -467,8 +467,8 @@ export const translations = {
       subhead: "Clear answers to questions job seekers frequently ask.",
       items: [
         {
-          q: "Is RekodJa really free?",
-          a: "Yes, 100% free to use. There are no hidden trial periods and no limits on the number of job postings you can save.",
+          q: "How much does RekodJa cost (Extension & Web App)?",
+          a: "The RekodJa Chrome Extension is 100% free forever with no limits on saved applications. The companion RekodJa Web App (app.rekodja.com) includes a generous Free tier for everyday tracking, alongside an optional Pro tier for advanced features such as automatic Gmail detection and deeper analytics.",
         },
         {
           q: "Can the developer or third parties see the jobs I save?",
