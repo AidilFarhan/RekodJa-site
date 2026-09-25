@@ -1,22 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RekodJa: Job Tracker — Save Job Postings Directly to Google Sheets</title>
+    
+    <!-- SEO & Social Meta Tags -->
+    <meta name="description" content="Capture job listings from LinkedIn, JobStreet, and Indeed straight into your private Google Sheet with 1 click. 100% client-side, zero developer servers, your data stays yours." />
+    <meta name="keywords" content="job tracker, rekodja, chrome extension, google sheets job tracker, job search organizer, jobstreet, linkedin, indeed" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rekodja.com/" />
+    
+    <!-- Open Graph / WhatsApp / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rekodja.com/" />
+    <meta property="og:title" content="RekodJa: Job Tracker — Direct to your Google Sheet" />
+    <meta property="og:description" content="Stop messy copy-pasting. Record job applications with one click straight into your own spreadsheet. No middlemen, no subscriptions." />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>RekodJa: Job Tracker</title>
-      <meta name="description" content="Interactive landing page showcasing a design system SaaS with 3D graphics, highlighting features, pricing, and customer testimonials to engage users." />
-      <meta name="robots" content="noindex, nofollow" />
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
-      
-    </head>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RekodJa: Job Tracker" />
+    <meta name="twitter:description" content="One-click job application tracker directly into your private Google Sheet." />
 
-    <body>
-      
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-      
-    </body>
-  </html>
-  
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        scroll-behavior: smooth;
+      }
+      #root {
+        min-height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
