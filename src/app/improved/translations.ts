@@ -159,7 +159,7 @@ export const translations = {
           feature: "Pemilikan Data Permohonan",
           manual: "Milik anda (Google Sheet)",
           saas: "Disimpan di server pihak ketiga",
-          rekodja: "Milik penuh anda (Google Drive sendiri)",
+          rekodja: "Milik penuh anda (Google Sheet sendiri)",
         },
         {
           feature: "Server Pembangun Mengintip Data?",
@@ -412,7 +412,7 @@ export const translations = {
           feature: "Data Ownership",
           manual: "Yours (Google Sheet)",
           saas: "Locked inside their proprietary database",
-          rekodja: "Complete ownership (Your Google Drive)",
+          rekodja: "Complete ownership (Your Google Sheet)",
         },
         {
           feature: "Developer Server Storing Data?",
