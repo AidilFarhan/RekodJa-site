@@ -4,11 +4,7 @@ import { BrandLogo, RekodJa, GoogleSheet } from "../components/BrandText";
 import { Chrome, ExternalLink, ShieldCheck } from "lucide-react";
 import { Separator } from "../components/ui/separator";
 
-interface FooterImprovedProps {
-  onOpenLegal: (type: "privacy" | "terms") => void;
-}
-
-export function FooterImproved({ onOpenLegal }: FooterImprovedProps) {
+export function FooterImproved() {
   const { t } = useLanguage();
 
   return (
@@ -75,22 +71,20 @@ export function FooterImproved({ onOpenLegal }: FooterImprovedProps) {
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <button
-                  type="button"
-                  onClick={() => onOpenLegal("privacy")}
+                <a
+                  href="/privacy/"
                   className="hover:text-white text-left transition-colors"
                 >
                   {t.footer.privacyPolicy}
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  type="button"
-                  onClick={() => onOpenLegal("terms")}
+                <a
+                  href="/terms/"
                   className="hover:text-white text-left transition-colors"
                 >
                   {t.footer.termsOfService}
-                </button>
+                </a>
               </li>
               <li>
                 <a
