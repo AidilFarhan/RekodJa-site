@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for the RekodJa: Job Tracker Chrome extension.">
+  <meta name="description" content="Privacy Policy for the RekodJa: Job Tracker Chrome extension, including how Google user data is accessed, used, protected and deleted.">
   <title>Privacy Policy | RekodJa</title>
   <link rel="canonical" href="https://rekodja.com/privacy/">
   <link rel="stylesheet" href="/styles.css">
@@ -14,17 +14,56 @@
   <main id="content" class="legal">
     <p class="eyebrow">RekodJa · Chrome extension</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: <time datetime="2026-09-27">27 September 2026</time></p>
+    <p class="updated">Last updated: <time datetime="2026-09-29">29 September 2026</time></p>
     <nav class="legal-tabs" aria-label="Legal pages"><a href="/privacy/" aria-current="page">Privacy Policy</a><a href="/terms/">Terms of Service</a></nav>
-    <section aria-labelledby="section-1"><h2 id="section-1">What the extension does</h2><p>RekodJa: Job Tracker is a Chrome extension that saves job-posting details into a Google Sheet you choose. When you open the extension on a job page, it suggests the company and role from the page title and job-posting metadata. You review the details before saving them with the job link and application date.</p></section>
-    <section aria-labelledby="section-2"><h2 id="section-2">Information the extension accesses</h2><ul><li><strong>Google Sheets:</strong> with your permission through Google OAuth, the extension reads and writes the spreadsheet you configure. It reads sheet-tab information so you can select a tab, and can add job records, set up headers, and apply formatting in that spreadsheet.</li><li><strong>Current tab:</strong> when you open the extension, it reads the active page URL, title, and relevant metadata to suggest job details. It does not monitor browsing in the background.</li><li><strong>Settings:</strong> the spreadsheet ID and selected sheet-tab name are saved in Chrome extension storage.</li></ul></section>
-    <section aria-labelledby="section-3"><h2 id="section-3">Google account permissions</h2><p>The extension requests Google’s spreadsheets permission. This permission can technically allow access to your Google spreadsheets; the extension’s implementation uses the spreadsheet ID you provide. It does not browse or list your Drive files. It does not request access to Gmail, contacts, or Calendar, and has no background worker.</p></section>
-    <section aria-labelledby="section-4"><h2 id="section-4">How information is used and shared</h2><p>Job details and spreadsheet requests go directly from your browser to Google’s servers to provide the features you use. We do not operate a backend server for the extension or collect your job records on our own servers. We do not sell your data, use it for advertising, or share it with other third parties.</p></section>
-    <section aria-labelledby="section-5"><h2 id="section-5">Storage and retention</h2><p>Your job records remain in the Google Sheet you control until you edit or delete them. Your spreadsheet ID and selected tab name are stored using Chrome’s synced extension storage, which may sync across your signed-in Chrome browsers according to your Chrome settings. These settings are not sent to us. Google handles the connected Google services under its own policies.</p></section>
-    <section aria-labelledby="section-6"><h2 id="section-6">Revoking access and deleting records</h2><p>You can revoke the extension’s Google access at any time from <a href="https://myaccount.google.com/permissions">Google Account permissions</a>, and uninstall the extension to stop using it. Revoking access or uninstalling does not delete previously saved rows: delete those records directly in your Google Sheet.</p></section>
-    <section aria-labelledby="section-7"><h2 id="section-7">The companion web app</h2><p>This policy covers the RekodJa Chrome extension. The companion RekodJa Web App is a separate product with its own privacy policy at <a href="https://app.rekodja.com/privacy">app.rekodja.com/privacy</a>.</p></section>
-    <section aria-labelledby="section-8"><h2 id="section-8">Contact</h2><p>For questions about this policy, email <a href="mailto:aidilfarhanjas@gmail.com">aidilfarhanjas@gmail.com</a>.</p></section>
-    <section aria-labelledby="section-9"><h2 id="section-9">Changes to this policy</h2><p>We may update this policy as the extension changes. The date at the top of this page will reflect the latest revision.</p></section>
+
+    <section aria-labelledby="section-1"><h2 id="section-1">Who we are and what the extension does</h2><p>RekodJa: Job Tracker (“RekodJa”, “the extension”, “we”) is a Chrome extension developed and operated by Aidil Farhan, an individual developer based in Malaysia. It saves job-posting details into a Google Sheet that you choose. When you open the extension on a job page, it suggests the company and role from the page title and job-posting metadata. You review the details before saving them together with the job link and application date.</p></section>
+
+    <section aria-labelledby="section-2"><h2 id="section-2">Information the extension accesses</h2><ul>
+      <li><strong>Google user data (Google Sheets):</strong> with your permission through Google OAuth, the extension reads and writes the spreadsheet you configure. See “Google user data we access” below for the exact data types and purposes.</li>
+      <li><strong>Current tab:</strong> when you open the extension, it reads the active page’s URL, title and relevant job-posting metadata to suggest job details. This is processed locally in your browser and is not sent to us. The extension does not monitor your browsing in the background.</li>
+      <li><strong>Settings:</strong> the spreadsheet ID and the selected sheet-tab name are saved in Chrome extension storage.</li>
+    </ul></section>
+
+    <section aria-labelledby="section-3"><h2 id="section-3">Google user data we access</h2>
+      <p>The extension requests exactly one Google OAuth scope:</p>
+      <p><code>https://www.googleapis.com/auth/spreadsheets</code> (See, edit, create and delete your Google Sheets spreadsheets)</p>
+      <p>We use this scope only to provide the features you ask for, and only on the spreadsheet whose ID you provide:</p>
+      <ul>
+        <li><strong>Sheet and tab information:</strong> the spreadsheet’s tab names, so you can choose which tab to save into.</li>
+        <li><strong>Header row:</strong> to check whether the header row exists, and to create or repair it if needed. The extension does not overwrite a custom header row you already have.</li>
+        <li><strong>Job records:</strong> to append the rows you choose to save (company, role, job URL, date applied, status, source) and to update the status of a record you change.</li>
+        <li><strong>Formatting:</strong> to apply date formats, status and source dropdowns, colour rules and the days-since-applied formula in that spreadsheet.</li>
+      </ul>
+      <p>Google describes this scope broadly, so it can technically allow access to any of your spreadsheets. RekodJa’s implementation only uses the spreadsheet ID you provide. It does not list or browse your Google Drive files, and it does not read other spreadsheets. It does not request access to Gmail, Contacts or Calendar, and it has no background worker.</p>
+    </section>
+
+    <section aria-labelledby="section-4"><h2 id="section-4">How Google user data is used and shared</h2>
+      <p>Google user data is used only to provide and improve the user-facing features described above. It is sent directly between your browser and Google’s servers. We do not operate a backend server for the extension, and we do not receive, copy or store your Google user data or your job records on any server of ours.</p>
+      <p>We do not sell Google user data. We do not use it for advertising, including personalised or retargeted ads. We do not transfer or share it with third parties, except where necessary to comply with applicable law. No human reads your data, and it is not used to develop, improve or train generalised AI or machine-learning models.</p>
+      <p>RekodJa’s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </section>
+
+    <section aria-labelledby="section-5"><h2 id="section-5">How we protect your data</h2><ul>
+      <li><strong>Encryption in transit:</strong> all communication between the extension and Google’s APIs uses HTTPS/TLS.</li>
+      <li><strong>No token handling by us:</strong> Google OAuth access tokens are obtained and managed by Chrome’s identity system. They are not sent to us, logged by us or stored by us.</li>
+      <li><strong>No central copy:</strong> because there is no RekodJa server or database, your job records exist only in your own Google Sheet, protected by your Google account’s security (including any 2-step verification you enable).</li>
+      <li><strong>Least privilege:</strong> the extension asks for a single Google scope and a minimal set of browser permissions (identity, activeTab, scripting, storage, and access to sheets.googleapis.com), and it only reads the current page when you open it.</li>
+      <li><strong>No credentials or keys in the extension:</strong> it does not ask for or store your Google password.</li>
+    </ul>
+    <p>No system is perfectly secure, but the design above means there is no RekodJa-operated store of your data that could be breached.</p></section>
+
+    <section aria-labelledby="section-6"><h2 id="section-6">Storage and retention</h2><p>Your job records remain in the Google Sheet you control until you edit or delete them. Your spreadsheet ID and selected tab name are stored using Chrome’s synced extension storage, which may sync across your signed-in Chrome browsers according to your Chrome settings. These settings are not sent to us. RekodJa retains no Google user data of its own. Google handles the connected Google services under its own policies.</p></section>
+
+    <section aria-labelledby="section-7"><h2 id="section-7">Revoking access and deleting your data</h2><p>You can revoke the extension’s Google access at any time from <a href="https://myaccount.google.com/permissions">Google Account permissions</a>, and uninstall the extension to stop using it. Uninstalling the extension also removes its locally stored settings from Chrome. Revoking access or uninstalling does not delete rows already saved: delete those records directly in your Google Sheet. Since we hold no copy of your data, there is nothing further for us to delete; if you have any doubt, contact us and we will confirm.</p></section>
+
+    <section aria-labelledby="section-8"><h2 id="section-8">Children</h2><p>RekodJa is not directed at children under 13, and we do not knowingly collect personal information from them.</p></section>
+
+    <section aria-labelledby="section-9"><h2 id="section-9">The companion web app</h2><p>This policy covers the RekodJa Chrome extension. The companion RekodJa Web App is a separate product with its own privacy policy at <a href="https://app.rekodja.com/privacy">app.rekodja.com/privacy</a>.</p></section>
+
+    <section aria-labelledby="section-10"><h2 id="section-10">Contact</h2><p>For questions about this policy or your data, email <a href="mailto:aidilfarhanjas@gmail.com">aidilfarhanjas@gmail.com</a>.</p></section>
+
+    <section aria-labelledby="section-11"><h2 id="section-11">Changes to this policy</h2><p>We may update this policy as the extension changes, for example if it ever requests an additional Google permission. The date at the top of this page will reflect the latest revision, and we will not expand our use of Google user data beyond what is described here without updating this policy first.</p></section>
   </main>
   <footer><span>© 2026 <span class="wordmark">Rekod<span class="wordmark-ja">Ja</span></span></span><nav aria-label="Footer navigation"><a href="/">Home</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>
 </body>
